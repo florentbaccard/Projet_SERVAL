@@ -3,6 +3,8 @@
 ## Projet de vue à la première personne
 
 Ce projet vise à créer une application de vue à la première personne, souvent appelée vision subjective, où l'utilisateur contrôle un avatar explorant un environnement comme s'il voyait la scène à travers les yeux de son personnage.
+<br/>
+Projet demander au sein de notre formation proposée par <a href = 'https://www.onlineformapro.com/' target = "_blank" >OnlineFormaPro.</a>
 
 ### Partie 1
 
@@ -47,5 +49,5 @@ git clone https://github.com/florentbaccard/Projet_SERVAL.git
 
 ## Captures d'écran
 
-![ScreenShoot](Screen/Screen-START.png)
-![ScreenShoot](Screen/Screen-END.png)
+![ScreenShoot](screen/Screen-START.png)
+![ScreenShoot](screen/Screen-END.png)
