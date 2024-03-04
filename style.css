@@ -1,0 +1,437 @@
+/* Définition d'une nouvelle police nommée 'AmazDooM' */
+@font-face {
+  font-family: 'AmazDooM';
+  src: url('police/AmazDooMLeft.ttf') format('truetype'); /* Chemin vers le fichier de police */
+}
+
+/* Application de la police 'AmazDooM' aux éléments body et button, avec une police de secours de type sans-serif */
+body, button {
+  font-family: 'AmazDooM', sans-serif; /* Police 'AmazDooM' avec secours sans-serif */
+  letter-spacing: 2.5px; /* Espacement entre les caractères */
+  margin: 0; /* Réinitialisation de la marge */
+  padding: 0; /* Réinitialisation du remplissage */
+  color: #ffffff; /* Couleur du texte en blanc */
+  font-size: 18px; /* Taille de la police */
+  background-color: black; /* Couleur de fond noire */
+  background-image: url('./assets/background1.jpg'); /* Image de fond */
+  background-position: top; /* Position de l'image de fond en haut */
+  background-size: cover; /* Redimensionner l'image de fond pour couvrir */
+}
+
+/* Redimensionnement de la taille de la police pour les éléments input */
+input {
+  font-size: 0.8vw; /* Taille de la police en fonction de la largeur de la vue */
+}
+
+/* Styles pour un positionnement absolu */
+.absolute {
+  z-index: 3; /* Index de positionnement z */
+  position: absolute; /* Position absolue */
+  top: 0; /* Positionnement en haut */
+  right: 0; /* Positionnement à droite */
+  bottom: 0; /* Positionnement en bas */
+  left: 0; /* Positionnement à gauche */
+}
+
+/* Styles pour un autre positionnement absolu */
+.abso {
+  z-index: 3; /* Index de positionnement z */
+  position: absolute; /* Position absolue */
+  top: -45px; /* Positionnement vers le haut avec un décalage */
+  right: 0; /* Positionnement à droite */
+  left: 39%; /* Positionnement à gauche avec un pourcentage */
+  height: 30%; /* Hauteur de 30% */
+  filter: drop-shadow(0px 20px 7px rgb(0, 0, 0)); /* Ombre portée */
+}
+
+/* Styles pour un élément de jeu */
+.game {
+  width: 43%; /* Largeur de 43% */
+  margin: 45px auto; /* Marge extérieure avec une marge supérieure et inférieure automatique */
+  border: 2px solid transparent; /* Bordure de 2px solide transparente */
+  border-image: 1; /* Image de bordure */
+  border-image-slice: 1; /* Coupe de l'image de bordure */
+  animation: iphone-border 5s infinite linear; /* Animation de bordure de type téléphone avec une durée de 5s et une répétition infinie */
+  border-radius: 10px; /* Bordure arrondie */
+  padding: 10px; /* Remplissage intérieur */
+  box-shadow: 0 0 20px 15px #ff5e006b; /* Ombre portée */
+  background-image: url(https://i.gifer.com/yN3.gif); /* Image de fond */
+  background-size: 100px; /* Taille de l'image de fond */
+}
+
+/* Styles pour une vue */
+.view {
+  width: 100%; /* Largeur de 100% */
+  margin: 0px; /* Marge de 0px */
+  background-image: url(http://www.textures4photoshop.com/tex/thumbs/lava-magma-seamless-texture-free-download-70.jpg); /* Image de fond */
+}
+
+/* Styles pour la première ligne */
+.row1 {
+  margin: 0px; /* Marge de 0px */
+  display: flex; /* Affichage en mode flex */
+  flex-direction: row; /* Direction des éléments en ligne */
+  background-color: #8e8e93; /* Couleur de fond */
+  border: #8e8891 10px groove; /* Bordure */
+  border-radius: 5px; /* Bordure arrondie */
+}
+
+/* Styles pour la deuxième ligne */
+.row2 {
+  margin: 10px 0 0 0 ; /* Marge en haut */
+  display: flex; /* Affichage en mode flex */
+  flex-direction: row; /* Direction des éléments en ligne */
+  border-radius: 5% / 95%; /* Bordure arrondie */
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0)); /* Ombre portée */
+  background-image: url(https://pics.craiyon.com/2023-07-24/2824964b4560423ab08659b041f59db0.webp); /* Image de fond */
+  background-size: 100%; /* Taille de l'image de fond */
+}
+
+/* Styles pour la colonne de gauche */
+.left {
+  padding: 2%; /* Remplissage intérieur */
+  width: 20%; /* Largeur de 20% */
+  display: flex; /* Affichage en mode flex */
+  flex-direction: column; /* Direction des éléments en colonne */
+}
+
+/* Styles pour les directions */
+.directions {
+  box-sizing: border-box; /* Boîte de dimensionnement de la bordure */
+  width: 100%; /* Largeur de 100% */
+  margin: 0 auto; /* Marge automatique */
+  padding: 10%; /* Remplissage intérieur */
+  border-radius: 30px; /* Bordure arrondie */
+}
+
+/* Styles pour un tableau */
+table {
+  width: 100%; /* Largeur de 100% */
+  margin: 0 auto; /* Marge automatique */
+}
+
+/* Styles pour les cellules de tableau */
+table td {
+  padding: 2%; /* Remplissage intérieur */
+}
+
+/* Styles pour le bouton de soumission du tableau */
+table input[type="submit"] {
+  padding: 15% 25%; /* Remplissage intérieur */
+}
+
+/* Styles pour les cellules */
+td {
+  filter: drop-shadow(15px -1mm 1mm #000000); /* Ombre portée */
+}
+
+/* Styles pour la colonne de droite */
+.right {
+  width: 80%; /* Largeur de 80% */
+  margin: 0 5%; /* Marge de 0 sur les côtés */
+}
+
+/* Styles pour le texte */
+.text {
+  padding: 5%; /* Remplissage intérieur */
+  height: 25%; /* Hauteur de 25% */
+  border-radius: 30px; /* Bordure arrondie */
+  background-color: rgba(255, 255, 255, 0.25); /* Couleur de fond avec transparence */
+  filter: drop-shadow
+
+(0px 0px 10px #000000); /* Ombre portée */
+  font-size: 28px; /* Taille de la police */
+}
+
+/* Styles pour l'inventaire */
+.inventory {
+  margin-top: 50px; /* Marge supérieure */
+  display: flex; /* Affichage en mode flex */
+  flex-direction: row; /* Direction des éléments en ligne */
+  align-items: center; /* Alignement des éléments */
+  justify-content: space-between; /* Justification de l'espace entre les éléments */
+}
+
+/* Styles pour le texte de l'inventaire */
+.text_inventaire {
+  margin: 40px auto 0 10px; /* Marge extérieure */
+  font-size: 42px; /* Taille de la police */
+  width: auto; /* Largeur automatique */
+  filter: drop-shadow(15px -1mm 1mm #000000e4); /* Ombre portée */
+}
+
+/* Styles pour les éléments en gras */
+span {
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Styles pour la boussole */
+.compass {
+  margin-top: 10%; /* Marge supérieure */
+}
+
+/* Styles pour les directions de la boussole */
+.east {
+  transform: rotate(0); /* Rotation à 0 degré */
+}
+
+.south {
+  transform: rotate(270deg); /* Rotation à 270 degrés */
+}
+
+.west {
+  transform: rotate(180deg); /* Rotation à 180 degrés */
+}
+
+.north {
+  transform: rotate(90deg); /* Rotation à 90 degrés */
+}
+
+/* Animation de rotation de l'Est au Nord */
+.EtoN {
+  animation: rotateEtoN 2s; /* Animation de 2s */
+}
+
+@keyframes rotateEtoN {
+  from {
+    transform: rotate(0deg); /* Rotation initiale à 0 degré */
+  }
+  to {
+    transform: rotate(90deg); /* Rotation finale à 90 degrés */
+  }
+}
+
+/* Réinitialisation de l'animation du bouton brillant */
+@keyframes glowing-button-reset {
+  0% {
+    background-position: 0 0; /* Position initiale de l'arrière-plan */
+  }
+  50% {
+    background-position: 100% 0; /* Position de l'arrière-plan à 50% */
+  }
+  100% {
+    background-position: 0 0; /* Position finale de l'arrière-plan */
+  }
+}
+
+/* Styles pour l'effet de brillance du bouton */
+.button-reset:after {
+  z-index: -1; /* Index de positionnement z */
+  content: ""; /* Contenu vide */
+  position: absolute; /* Position absolue */
+  width: 100%; /* Largeur de 100% */
+  height: 100%; /* Hauteur de 100% */
+  background-color: #9d975d; /* Couleur de fond */
+  left: 0; /* Positionnement à gauche */
+  top: 0; /* Positionnement en haut */
+  border-radius: 10px; /* Bordure arrondie */
+}
+
+/* Styles pour l'élément 'bag' */
+#bag {
+  height: 100px; /* Hauteur de 100px */
+  padding-right: 15px; /* Remplissage à droite */
+  filter: drop-shadow(15px -1mm 1mm #000000e4); /* Ombre portée */
+}
+
+/* Styles pour le bouton */
+#btn {
+  margin-top: 75px; /* Marge supérieure */
+}
+
+/* Styles pour l'élément SVG 'fire' */
+#fireSVG {
+  position: absolute; /* Position absolue */
+  left: 0; /* Positionnement à gauche */
+  top: 0; /* Positionnement en haut */
+  width: 100vw; /* Largeur de 100% de la vue */
+  height: 100vh; /* Hauteur de 100% de la vue */
+  z-index: -1; /* Index de positionnement z */
+  background-color: #7a3d3d; /* Couleur de fond */
+}
+
+/* Animation de défilement */
+.slide {
+  animation: slide 5s linear infinite; /* Animation de défilement de 5s en boucle */
+}
+
+@keyframes slide {
+  0% {
+      transform: translateY(100vh) /* Déplacement initial vers le bas de 100% de la hauteur de la vue */
+  }
+
+  100% {
+      transform: translateY(0vh) /* Déplacement final vers le haut de 0% de la hauteur de la vue */
+  }
+}
+
+/* Mode de mélange de multiplication */
+.multiply {
+  mix-blend-mode: multiply; /* Mode de mélange de multiplication */
+}
+
+/* Styles pour le bouton de suppression */
+.delete-button {
+  background-color: #000; /* Couleur de fond noire */
+  color: #ff0000; /* Couleur du texte en rouge */
+  font-size: 28px; /* Taille de la police */
+  border: 0.5px solid rgba(0, 0, 0, 0.1); /* Bordure solide avec transparence */
+  letter-spacing: 2.5px; /* Espacement entre les caractères */
+  width: 120px; /* Largeur de 120px */
+  height: 45px; /* Hauteur de 45px */
+  border-radius: 15px 15px 12px 12px; /* Bordure arrondie */
+  cursor: pointer; /* Curseur de type pointeur */
+  position: relative; /* Position relative */
+  will-change: transform; /* Optimisation de l'animation */
+  transition: all .1s ease-in-out 0s; /* Transition d'animation */
+  user-select: none; /* Empêcher la sélection de l'utilisateur */
+  /* Ajout d'un dégradé sur chaque côté */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-position: bottom right, bottom right; /* Position de l'arrière-plan */
+  background-size: 100% 100%, 100% 100%; /* Taille de l'arrière-plan */
+  background-repeat: no-repeat; /* Répétition de l'arrière-plan */
+  /* Ombre portée */
+  box-shadow: inset -4px -10px 0px rgba(255, 255, 255, 0.4),
+    inset -4px -8px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 1px rgba(0, 0, 0, 0.3),
+    0px 2px 1px rgba(255, 255, 255, 0.1);
+
+
+  transform: perspective(70px) rotateX(5deg) rotateY(0deg); /* Transformation en perspective */
+}
+
+/* Pseudo-élément après pour l'effet de dégradé */
+.delete-button::after {
+  content: ''; /* Contenu vide */
+  position: absolute; /* Position absolue */
+  top: 0; /* Positionnement en haut */
+  bottom: 0; /* Positionnement en bas */
+  left: 0; /* Positionnement à gauche */
+  right: 0; /* Positionnement à droite */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)); /* Dégradé de couleur */
+  z-index: -1; /* Index de positionnement z */
+  border-radius: 15px; /* Bordure arrondie */
+  box-shadow: inset 4px 0px 0px rgba(255, 255, 255, 0.1), /* Ombre portée */
+    inset 4px -8px 0px rgba(0, 0, 0, 0.3); /* Ombre portée */
+  transition: all .1s ease-in-out 0s; /* Transition d'animation */
+}
+
+/* Pseudo-élément avant pour l'effet de dégradé */
+.delete-button::before {
+  content: ''; /* Contenu vide */
+  position: absolute; /* Position absolue */
+  top: 0; /* Positionnement en haut */
+  bottom: 0; /* Positionnement en bas */
+  left: 0; /* Positionnement à gauche */
+  right: 0; /* Positionnement à droite */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), /* Dégradé de couleur */
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Dégradé de couleur */
+  background-position: bottom right, bottom right; /* Position de l'arrière-plan */
+  background-size: 100% 100%, 100% 100%; /* Taille de l'arrière-plan */
+  background-repeat: no-repeat; /* Répétition de l'arrière-plan */
+  z-index: -1; /* Index de positionnement z */
+  border-radius: 15px; /* Bordure arrondie */
+  transition: all .1s ease-in-out 0s; /* Transition d'animation */
+}
+
+/* Styles pour l'état actif du bouton de suppression */
+.delete-button:active {
+  will-change: transform; /* Optimisation de l'animation */
+  transform: perspective(80px) rotateX(5deg) rotateY(1deg) translateY(3px) scale(0.96); /* Transformation avec perspective, rotation, translation et mise à l'échelle */
+  height: 45px; /* Hauteur de 45px */
+  border: 0.25px solid rgba(0, 0, 0, 0.2); /* Bordure solide avec transparence */
+  box-shadow: inset -4px -8px 0px rgba(255, 255, 255, 0.2), /* Ombre portée */
+    inset -4px -6px 0px rgba(0, 0, 0, 0.8), /* Ombre portée */
+    0px 1px 0px rgba(0, 0, 0, 0.9), /* Ombre portée */
+    0px 1px 0px rgba(255, 255, 255, 0.2); /* Ombre portée */
+  transition: all .1s ease-in-out 0s; /* Transition d'animation */
+}
+
+/* État actif du pseudo-élément après pour l'effet de dégradé */
+.delete-button::after:active {
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2)); /* Dégradé de couleur */
+}
+
+/* État actif du pseudo-élément avant pour l'effet de dégradé */
+.delete-button:active::before {
+  content: ""; /* Contenu vide */
+  display: block; /* Affichage en mode bloc */
+  position: absolute; /* Position absolue */
+  top: 5%; /* Positionnement en haut */
+  left: 20%; /* Positionnement à gauche */
+  width: 50%; /* Largeur de 50% */
+  height: 80%; /* Hauteur de 80% */
+  background-color: rgba(255, 255, 255, 0.1); /* Couleur de fond avec transparence */
+  animation: overlay 0.1s ease-in-out 0s; /* Animation d'incrustation */
+  pointer-events: none; /* Événements de pointeur non autorisés */
+}
+
+/* Animation d'incrustation */
+@keyframes overlay {
+  from {
+    opacity: 0; /* Opacité initiale */
+  }
+
+  to {
+    opacity: 1; /* Opacité finale */
+  }
+}
+
+/* Réinitialisation de la mise au point du bouton de suppression */
+.delete-button:focus {
+  outline: none; /* Aucun contour */
+}
+
+/* Styles pour un autre positionnement absolu */
+.abso2 {
+  background-color: rgba(255, 255, 255, 0.05); /* Couleur de fond avec transparence */
+  min-height: 200px; /* Hauteur minimale de 200px */
+  width: 325px; /* Largeur de 325px */
+  position: absolute; /* Position absolue */
+  z-index: 3; /* Index de positionnement z */
+  left: 78%; /* Positionnement à gauche */
+  top: 10%; /* Positionnement en haut */
+  border: rgba(255, 255, 255, 0.40) 1px transparent; /* Bordure avec transparence */
+  border-radius: 20px; /* Bordure arrondie */
+}
+
+/* Styles pour les éléments avec la classe 'key' */
+.key {
+  display: flex; /* Utiliser le modèle de disposition flexbox */
+  align-items: center; /* Aligner les éléments verticalement au centre */
+  width: 100%; /* Définir la largeur à 100% du conteneur parent */
+  color: red; /* Définir la couleur du texte en rouge */
+  flex-direction: row; /* Disposer les éléments flex en ligne */
+  justify-content: center; /* Aligner les éléments flex horizontalement au centre */
+  font-size: 42px; /* Définir la taille de police à 42 pixels */
+  margin-top: 15px; /* Ajouter une marge supérieure de 15 pixels */
+  margin-bottom: 20px; /* Ajouter une marge inférieure de 20 pixels */
+}
+
+/* Styles pour les listes non ordonnées */
+ul {
+  list-style-type: none; /* Supprimer le style de liste par défaut */
+  display: flex; /* Utiliser le modèle de disposition flexbox */
+  justify-content: space-evenly; /* Répartir les éléments de manière égale le long de l'axe principal */
+  align-items: center; /* Aligner les éléments verticalement au centre */
+}
+
+/* Styles pour des éléments de liste spécifiques */
+.li1 {
+  margin: 0px; /* Supprimer la marge */
+  padding-left: 10%; /* Ajouter un rembourrage à gauche de 10% */
+  padding-right: 5%; /* Ajouter un rembourrage à droite de 5% */
+}
+
+.li2 {
+  padding-top: 10px; /* Ajouter un rembourrage supérieur de 10 pixels */
+  padding-right: 60px; /* Ajouter un rembourrage droit de 60 pixels */
+}
+
+.li3 {
+  padding-right: 120px; /* Ajouter un rembourrage droit de 120 pixels */
+  padding-top: 10px; /* Ajouter un rembourrage supérieur de 10 pixels */
+}
+
+/* style.css */

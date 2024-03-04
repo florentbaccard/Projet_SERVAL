@@ -1,0 +1,38 @@
+Projet_Serval ( PHP POO ) 
+
+Suivi des consignes : 
+
+PARTIE 1 :
+
+1 : Réaliser le MCD sur les 3 tables : map (points accessibles de la carte), text (les textes à afficher), images (les images à afficher). FAIT
+- OK
+2 : Créer une base de données « fpview » et les tables selon le MCD. FAIT
+- OK
+3 : Dans un fichier database.php, développer une classe Database qui hérite de la classe PDO native de PHP. Les propriétés de la classe sont les paramètres de connexion PDO à la base. La classe ne possède qu’une seule méthode : son constructeur dans lequel la connexion est réalisée. FAIT
+- OK
+4 : Créer dans le fichier index.php une fonction d’autoload. FAIT
+- OK
+5 : Toujours dans le fichier index.php, coder le layout (partie html : first person view, le bloc de bouton et l’affichage du texte et de la boussole. Le bloc de boutons peut être constitué d’une table insérée dans un formulaire. Au clic sur l’un des boutons de déplacement / rotation le formulaire est soumis). FAIT
+- OK
+6 : Modifier le fichier index.php (partie php) de façon à traiter le déplacement transmis depuis le formulaire précédent. Le fichier index.php contient une instanciation des classes FirstPersonView et FirstPersonText permettant l’affichage du décor et des textes en fonction de la position sur la map.
+Prévoir la position initiale de l’avatar en début de parcours alors qu’aucun formulaire n’est encore soumis.
+- OK
+7 : Dans un fichier FirstPersonView.class.php développer la classe firstPersonView. FAIT
+- OK
+8 : Dans un fichier FirstPersonText.class.php développer la classe firstPersonText. FAIT
+- OK
+9 : Selon le principe DRY (Don’t Repeat Yourself) factoriser le code : toutes les instructions répétées dans le code peuvent être regroupées dans une fonction. FAIT
+- OK
+
+Suivi des consignes :
+
+PARTIE 2 : 
+
+1 : Modifier le MCD sur les 5 tables décrites ci-dessus. FAIT
+- OK
+2 : Modifier la base de données « fpview » et les tables selon le MCD. FAIT
+- OK
+3 : Dans un fichier FirstPersonAction.class.php développer la classe firstPersonAction. FAIT
+- OK
+4 : Selon le principe DRY (Don’t Repeat Yourself) factoriser le code : toutes les instructions répétées dans le code peuvent être regroupées dans une fonction. FAIT
+- OK
